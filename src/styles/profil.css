@@ -1,0 +1,90 @@
+@media (min-width: 768px){
+
+.profilCard{
+    width: 30rem;
+    height: fit-content;
+}
+
+.profilPicture{
+    padding: 1rem;
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+    margin:auto;
+}
+
+.userName{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1em; 
+    display: flex;
+    flex-direction: column;
+}
+
+.userName span{
+    margin: auto;
+}
+
+.profilContainer{
+    display: flex;
+    flex-direction: column;
+    height:600px;
+    width: fit-content;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.preferenceSpan{
+    margin-bottom: 2rem;
+    font-size: 1.1rem;;
+}
+
+.close{
+    font-size: .6rem;
+}
+}
+
+@media(max-width:768px){
+    .profilCard{
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .profilPicture{
+        padding: 1rem;
+        border-radius: 100%;
+        width: 10rem;
+        height: 10rem;
+        margin:auto;
+    }
+    
+    .userName{
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 1em; 
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .userName span{
+        margin: auto;
+    }
+    
+    .profilContainer{
+        display: flex;
+        flex-direction: column;
+        height:600px;
+        width: 95%;
+        margin: auto;
+        overflow-y: auto;
+    }
+    
+    .preferenceSpan{
+        margin-bottom: 2rem;
+        font-size: 1.1rem;;
+    }
+    
+    .close{
+        font-size: .6rem;
+    }
+}

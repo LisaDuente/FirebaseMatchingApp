@@ -1,0 +1,30 @@
+@media (min-width: 768px) { 
+
+body{
+    margin: auto;
+    border: 2px solid red;
+    height: 600px;
+    overflow: hidden;
+}
+
+.home{
+    border: 2px solid green;
+    height:500px;
+    overflow-y: scroll;
+
+}
+
+.badge{
+    margin-right: 0.5em;;
+}
+
+.card{
+    margin: 1em auto;
+
+}
+
+.percentage{
+    color: green;
+    float: right;
+}
+}

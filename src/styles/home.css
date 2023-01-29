@@ -1,0 +1,34 @@
+@media (min-width: 768px) { 
+
+    .home{
+        width: 50%;
+        background-color: rgb(196, 223, 226);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .userInformation{
+        overflow: scroll;
+        height: 500px;
+    }
+    
+    .SearchBar{
+        margin: 1rem auto;
+        width: fit-content;
+        height: 2rem;
+        display: inline-flex;
+    }
+    
+    .SearchBar input{
+        width: 20rem;
+       
+    }
+    
+    .SearchBar button{
+        width: fit-content;
+        margin-left: 0.1rem;
+        font-size: 1rem;
+    }
+
+}
