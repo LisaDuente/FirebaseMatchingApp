@@ -1,26 +1,39 @@
 @media (min-width: 768px) { 
 
 body{
-    margin: auto;
-    border: 2px solid red;
-    height: 600px;
-    overflow: hidden;
-}
+    margin:auto;
+    overflow: scroll;
+    overflow-x: hidden;
 
-.home{
-    border: 2px solid green;
-    height:500px;
-    overflow-y: scroll;
+    height: 500px;
+    width: 100%;
 
 }
 
+.preferences{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+.preferences::-webkit-scrollbar{
+    display: none;
+}
 .badge{
     margin-right: 0.5em;;
 }
 
-.card{
-    margin: 1em auto;
+.home{
+    padding: 1rem;
+    margin-top: 4rem;
 
+}
+
+.dashCard{
+    margin: 1em auto;
+    width: 18rem;
 }
 
 .percentage{
@@ -28,3 +41,47 @@ body{
     float: right;
 }
 }
+
+@media (max-width: 768px) { 
+
+    body{
+        margin:auto;
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 500px;
+        width: auto;
+    
+    }
+    
+    .preferences{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+    }
+    
+    .preferences::-webkit-scrollbar{
+        display: none;
+    }
+    .badge{
+        margin-right: 0.5em;;
+    }
+    
+    .home{
+        padding: 1rem;
+        margin-top: 4rem;
+        width: 100%;
+    
+    }
+    
+    .dashCard{
+        margin: 1em auto;
+        width: 100%;
+    }
+    
+    .percentage{
+        color: green;
+        float: right;
+    }
+    }

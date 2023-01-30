@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react';
 import { userCollection } from '../lib/Controller';
 import { User } from '../types/user';
 import "../styles/bootStrapHome.css"
-import Information from '../components/BootstrapInformation';
+import Information from '../components/HomeComponents/DashboardInformation';
 import { getCurrentUser, getAllUsers, getMatchesWithCounter } from '../lib/matching';
 import { matchCounter } from '../types/matchCounter';
 
@@ -23,16 +23,17 @@ function Home() {
   return (
     <div className='home'>
         {matches && matches.length ? (
-            <div className='userInformation'>
-                {
+           
                     matches?.map((matchCounter) => (
                             <Information key={matchCounter.user.id+"info"} match={matchCounter} />
                         ))
-                }
-            </div>
+                
+         
         ) : (
             <h2>No user information!</h2>
-        )}
+        )
+        }
+
         
     </div>
   );

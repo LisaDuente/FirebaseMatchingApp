@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { matchCounter } from '../types/matchCounter';
+import { matchCounter } from '../../types/matchCounter';
 import Preferences from './Preferences'
 
 
@@ -15,7 +15,7 @@ function Information(props: IProps) {
     //maybe add contact info here?
 
   return (
-    <Card style={{ width: '18rem' }} className= "card">
+    <Card className="dashCard">
       <Card.Img variant="top" src="placeholder.png" alt="Picture" />
       <Card.Body>
         <Card.Title>{match.user.name} <span className='percentage'>{match.percentage}%</span></Card.Title>

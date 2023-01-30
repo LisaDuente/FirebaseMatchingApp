@@ -2,9 +2,9 @@
 import { useEffect, useState } from 'react'
 import { Button, Card, FloatingLabel, Form, Modal } from 'react-bootstrap';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import updateContactInfo from '../lib/updateContactInformation';
-import { ContactInputs } from '../types/formInputs';
-import { User } from '../types/user'
+import updateContactInfo from '../../lib/updateContactInformation';
+import { ContactInputs } from '../../types/formInputs';
+import { User } from '../../types/user'
 
 interface contactProps{
     user: User | undefined;

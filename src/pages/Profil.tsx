@@ -1,6 +1,6 @@
 import { doc, DocumentData, getDoc, onSnapshot, QuerySnapshot } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
-import ProfilCard from '../components/ProfilCard';
+import ProfilCard from '../components/ProfilComponents/ProfilCard';
 import { hobbyCollection, userCollection } from '../lib/Controller';
 import { auth } from '../lib/Firebase';
 import { User } from '../types/user';

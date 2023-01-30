@@ -2,7 +2,7 @@
 import { match } from 'assert';
 import React, { Component } from 'react'
 import { Badge } from 'react-bootstrap';
-import { matchCounter } from '../types/matchCounter';
+import { matchCounter } from '../../types/matchCounter';
 
 interface preferenceProps {
     match: matchCounter;

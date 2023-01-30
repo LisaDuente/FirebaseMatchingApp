@@ -6,6 +6,9 @@
         border-bottom: 5px solid rgb(188, 195, 202);
         display: inline-block;
         width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 2;
     
     }
     h1{
@@ -20,13 +23,49 @@
     .link{
         margin-right: 2rem;
         font-size: 20px;
-        color: black;
+        color: rgb(255, 255, 255);
         text-decoration: none;
-        float: left;
     }
     
     .link:hover{
         opacity: 0.8;
+        color: rgb(185, 182, 182);
+    }
+
+}
+
+@media (max-width: 768px){
+    .navbar{
+        font-size: 20px;
+        padding: 5px;
+        color: grey;
+        border-bottom: 5px solid rgb(188, 195, 202);
+        display: inline-block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    
+    }
+    h1{
+        width: fit-content;
+       margin: auto;
+    }
+    .links{
+        width: fit-content;
+        margin:  auto;
+    }
+    
+    .link{
+        margin-right: 2rem;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    .link:hover{
+        opacity: 0.8;
+        color: rgb(185, 182, 182);
     }
 
 }

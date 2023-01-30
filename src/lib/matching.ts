@@ -1,7 +1,14 @@
-import { DocumentData, QuerySnapshot } from "firebase/firestore";
+import {
+  doc,
+  DocumentData,
+  DocumentSnapshot,
+  getDoc,
+  QuerySnapshot,
+} from "firebase/firestore";
 import { auth } from "./Firebase";
 import { matchCounter } from "../types/matchCounter";
 import { User } from "../types/user";
+import { userCollection } from "./Controller";
 
 export function getAllUsers(snapshot: QuerySnapshot<DocumentData>): User[] {
   return snapshot.docs

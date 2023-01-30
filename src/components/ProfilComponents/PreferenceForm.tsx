@@ -1,13 +1,13 @@
 
 import { Button, Tab, Tabs } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-import { User } from '../types/user';
-import "../styles/profil.css"
-import { Hobby } from '../types/hobby';
+import { User } from '../../types/user';
+import "../../styles/profil.css"
+import { Hobby } from '../../types/hobby';
 import { useEffect, useState } from 'react';
-import { hobbyCollection } from '../lib/Controller';
+import { hobbyCollection } from '../../lib/Controller';
 import { DocumentData, onSnapshot, QuerySnapshot } from 'firebase/firestore';
-import { addHobby, deleteHobby, getAllHobbies } from '../lib/hobbyFunctions';
+import { addHobby, deleteHobby, getAllHobbies } from '../../lib/hobbyFunctions';
 
 
 
@@ -18,12 +18,13 @@ interface IProps{
 function PreferenceForm(props: IProps) {
     const {user} = props;
     const [hobby, setHobby] = useState<Hobby>()
-    const [userHobbies, setUserHobbies] = useState<String[]>()
+    const [userHobbies, setUserHobbies] = useState<string[]>()
 
     useEffect(() =>{
       onSnapshot(hobbyCollection,(snapshot: QuerySnapshot<DocumentData>) =>{
         const hobby = getAllHobbies(snapshot)
         setHobby(hobby[0])
+        console.log("render")
       })
     }, [])
 

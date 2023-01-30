@@ -53,6 +53,10 @@
     ]
   },
   "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "@types/styled-components": "^5.1.26",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@types/testing-library__user-event": "^4.2.0",
     "@types/uuid": "^9.0.0"
   }
 }

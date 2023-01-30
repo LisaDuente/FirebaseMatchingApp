@@ -5,8 +5,9 @@ import { onAuthStateChanged } from 'firebase/auth';
 import React, { useState } from 'react';
 import { auth } from '../lib/Firebase';
 import Logout from './Logout';
+import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
 
-function Navbar() {
+function NavigationBar() {
   const [user, setUser] = useState(null)
   onAuthStateChanged(auth, (user: any) => {
           if (user) {
@@ -17,14 +18,24 @@ function Navbar() {
           }
         );
   return (
-   <nav className="navbar">
-        <h1>Match Me Super App</h1>
-        <div className='links'>
+    <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src="placeholder.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            MakeMeMatch
+          </Navbar.Brand>
+          <Nav>
           {
             user ?  
             <div>
               <Link className='link' to='/profil'>Profil</Link>
-              <Link className='link' to='/home'>Home</Link>
+              <Link className='link' to='/home'>Dashboard</Link>
               <Logout classString='link'/>
             </div>
             :
@@ -33,9 +44,10 @@ function Navbar() {
                 <Link className='link' to='/'>Sign up</Link>
             </div>
           }
-        </div>
-   </nav>
+          </Nav>
+        </Container>
+      </Navbar>
   );
 }
 
-export default Navbar;
+export default NavigationBar;
