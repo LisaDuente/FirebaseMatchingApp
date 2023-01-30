@@ -54,7 +54,11 @@ export function getMatchesWithCounter(
         matchedPrefs.push(pref);
       }
     });
-    const percent = (counter / user.preferences.length) * 100;
+    const percent = Math.round(
+      (counter /
+        (user.preferences.length + match.preferences.length - counter)) *
+        100
+    );
     matchCounters.push({
       user: match,
       counter: counter,

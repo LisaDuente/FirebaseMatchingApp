@@ -2,12 +2,8 @@
 
 body{
     margin:auto;
-    overflow: scroll;
-    overflow-x: hidden;
-
     height: 500px;
     width: 100%;
-
 }
 
 .preferences{
@@ -28,17 +24,26 @@ body{
 .home{
     padding: 1rem;
     margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+}
 
+.home::-webkit-scrollbar{
+    display: none;
 }
 
 .dashCard{
-    margin: 1em auto;
-    width: 18rem;
+    margin: 1em;
+    width: 20rem;
+    display: inline-flex;
 }
 
 .percentage{
     color: green;
     float: right;
+    width: fit-content;
 }
 }
 

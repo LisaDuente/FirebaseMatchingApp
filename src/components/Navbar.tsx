@@ -21,14 +21,15 @@ function NavigationBar() {
     <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
+          MakeMeMatch
+          {' '}
             <img
               alt=""
-              src="placeholder.png"
+              src="background.png"
               width="30"
               height="30"
               className="d-inline-block align-top"
-            />{' '}
-            MakeMeMatch
+            />
           </Navbar.Brand>
           <Nav>
           {
