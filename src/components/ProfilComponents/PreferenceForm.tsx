@@ -28,6 +28,12 @@ function PreferenceForm(props: IProps) {
       })
     }, [])
 
+    useEffect(()=> {
+      if(user?.preferences){
+        setUserHobbies(user?.preferences)
+      }
+    }, [])
+
     const testHobby = {...hobby}
    
 
@@ -47,7 +53,7 @@ function PreferenceForm(props: IProps) {
               return <Tab eventKey={caption} title={caption}>
                 {
                   testHobby[caption as keyof Hobby]?.map((gameName: string) => {
-                    return <Button style={{margin: "0.1rem"}} variant="success" className="addBtn" onClick={async() => {await addHobby((user as User), gameName); setUserHobbies(user?.preferences)}}>{gameName} +</Button>
+                    return <Button style={{margin: "0.1rem"}} variant="success" className="addBtn" onClick={async() => {await addHobby((user as User), gameName); if(userHobbies){setUserHobbies([gameName, ...userHobbies])}}}>{gameName} +</Button>
                   })
 
                 }          
