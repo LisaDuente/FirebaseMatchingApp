@@ -165,18 +165,20 @@
 }
 .accordion-button{
     background-color: var(--highlight-color);
-    color: var(--bg-color);
-    font-size: large;
+    color: white;
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 500;
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--bg-color);
+    color: white;
     background-color: var(--highlight-color);
-    border-color: black;
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
   }
 
 .accordion-button:focus {
-    box-shadow: none;
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
   }
 
   .accordion-button:hover{
@@ -185,10 +187,24 @@
 
 .accordion{
      background-color: var(--card-color);
+
 }
 
 .accordion-body{
     background-color: var(--bg-color);
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+}
+
+.accordion-collapse{
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+}
+
+.accordion-collapse[collapsing]{
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+}
+
+.accrodion-item{
+    --bs-accordion-border-color: var(--card-borders);
 }
 
 .contactCard{
