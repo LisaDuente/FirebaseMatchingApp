@@ -21,7 +21,7 @@ function Information(props: IProps) {
         <Card.Title>{match.user.name} <span className='percentage'>{match.percentage}%</span></Card.Title>
         <Preferences key={"pref/"+match.user.id} match={match} />
         <span>
-        <Button variant="warning">send friend request</Button>
+        <Button className="friendButton" variant="dark">become friends</Button>
         </span>
       </Card.Body>
     </Card>

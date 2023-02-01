@@ -38,12 +38,22 @@ body{
     margin: 1em;
     width: 20rem;
     display: inline-flex;
+    background-color: var(--card-color);
+    color: white;
 }
 
 .percentage{
-    color: green;
+    color: var(--highlight-color);
     float: right;
     width: fit-content;
+}
+
+.friendButton{
+    background-color: var(--highlight-color);
+}
+
+.dashCard:hover{
+    transform: scale(1.01)
 }
 }
 
@@ -53,9 +63,8 @@ body{
         margin:auto;
         overflow: scroll;
         overflow-x: hidden;
-        height: 500px;
+        height: fit;
         width: auto;
-    
     }
     
     .preferences{
@@ -65,7 +74,9 @@ body{
         padding-bottom: .5rem;
         padding-top: .5rem;
     }
-    
+    .friendButton{
+        background-color: var(--highlight-color);
+    }
     .preferences::-webkit-scrollbar{
         display: none;
     }
@@ -83,10 +94,12 @@ body{
     .dashCard{
         margin: 1em auto;
         width: 100%;
+        background-color: var(--card-color);
+        color: white;
     }
     
     .percentage{
-        color: green;
+        color: var(--highlight-color);
         float: right;
     }
     }

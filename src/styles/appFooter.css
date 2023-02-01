@@ -1,6 +1,6 @@
 @media (max-width: 768px) { 
 .appFooter{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgb(33,37,41);
@@ -15,7 +15,6 @@
     color: grey;
     text-decoration: none;
 }
-
 
 .footerItem:hover{
     color: rgb(158, 158, 158);
