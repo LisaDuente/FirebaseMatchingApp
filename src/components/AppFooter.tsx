@@ -7,9 +7,9 @@ export function AppFooter(){
         <div className="appFooter">
             <div className="itemContainer">
                 <a className="footerItem" href="#">contact</a> 
-                <p className="footerItem">/</p>
+                <p className="footerItem" style={{color: "rgb(245, 138, 7)"}}>/</p>
                 <a className="footerItem" href="#">about me </a>
-                <p className="footerItem">/</p>
+                <p className="footerItem"style={{color: "rgb(245, 138, 7)"}}>/</p>
                 <p className="footerItem">thanks!</p>
             </div>
             

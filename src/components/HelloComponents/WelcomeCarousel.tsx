@@ -2,23 +2,24 @@ import { Carousel } from "react-bootstrap";
 
 
 export function WelcomeCarousel(){
+    const interval: number = 8000;
     return(
-        <Carousel>
-        <Carousel.Item>
+        <Carousel className="welcomeCarousel" controls={false}>
+        <Carousel.Item interval={interval}>
           <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            className=""
+            src="placeholder.png"
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 style={{float: "right"}}>First slide label</h3>
+            <p >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={interval}>
           <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            className=""
+            src="placeholder.png"
             alt="Second slide"
           />
   
@@ -27,10 +28,10 @@ export function WelcomeCarousel(){
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={interval}>
           <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+            className=""
+            src="placeholder.png"
             alt="Third slide"
           />
   
