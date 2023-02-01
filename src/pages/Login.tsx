@@ -42,7 +42,7 @@ const Login = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder='Password' onChange={(e)=>setPassword(e.target.value)}/>
                     </Form.Group>
-                    <Button style={{width: "100%"}} type='submit' onClick={onLogin} >Login</Button>
+                    <Button variant='dark' className="loginButton" type='submit' onClick={onLogin} >Login</Button>
                 </Form>
             </Card.Body>
         </Card>

@@ -1,5 +1,4 @@
 
-import { Navbar } from "react-bootstrap"
 import "../styles/appFooter.css"
 
 export function AppFooter(){

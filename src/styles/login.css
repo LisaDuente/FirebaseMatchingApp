@@ -3,15 +3,28 @@
         margin: 4rem auto auto auto;
         padding: 1rem;
         align-items: center;
-        width: 40%;
+        width: 40rem;
+        background-color: rgba(0, 0, 0, 0.234);
+        color: white;
+        border-radius: 20px;
     }
 
     .loginCardBody{
-        width: 70%
+        width: 60%
     }
 
     .loginForm{
         width: 100%
+    }
+
+    .loginButton{
+        width: 100%;
+        background-color: var(--highlight-color);
+        border-color: var(--bg-color);
+    }
+
+    .loginButton:hover{
+        opacity: 0.8;
     }
 
 }
@@ -22,5 +35,13 @@
         padding: 1rem;
         align-items: center;
         width: 80%;
+        background-color: var(--card-color);
+        color: white;
+    }
+
+    .loginButton{
+        width: 100%;
+        background-color: var(--highlight-color);
+        border-color: var(--bg-color);
     }
 }
