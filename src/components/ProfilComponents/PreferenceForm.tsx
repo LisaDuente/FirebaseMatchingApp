@@ -25,6 +25,7 @@ function PreferenceForm(props: IProps) {
         const hobby = getAllHobbies(snapshot)
         setHobby(hobby[0])
         console.log("render")
+        setUserHobbies(user?.preferences)
       })
     }, [])
 
@@ -32,7 +33,7 @@ function PreferenceForm(props: IProps) {
       if(user?.preferences){
         setUserHobbies(user?.preferences)
       }
-    }, [])
+    }, [user])
 
     const testHobby = {...hobby}
    

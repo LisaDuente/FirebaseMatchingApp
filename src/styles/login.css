@@ -1,0 +1,26 @@
+@media (min-width: 768px){
+    .loginCard{
+        margin: 4rem auto auto auto;
+        padding: 1rem;
+        align-items: center;
+        width: 40%;
+    }
+
+    .loginCardBody{
+        width: 70%
+    }
+
+    .loginForm{
+        width: 100%
+    }
+
+}
+
+@media (max-width: 768px){
+    .loginCard{
+        margin: 4rem auto auto auto;
+        padding: 1rem;
+        align-items: center;
+        width: 80%;
+    }
+}

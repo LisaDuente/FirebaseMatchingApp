@@ -2,8 +2,8 @@ import { DocumentData, onSnapshot, QuerySnapshot } from 'firebase/firestore';
 import {useEffect, useState} from 'react';
 import { userCollection } from '../lib/Controller';
 import { User } from '../types/user';
-import "../styles/bootStrapHome.css"
-import Information from '../components/HomeComponents/DashboardInformation';
+import "../styles/DashBoard.css"
+import Information from '../components/DashboardComponents/DashboardInformation';
 import { getCurrentUser, getAllUsers, getMatchesWithCounter } from '../lib/matching';
 import { matchCounter } from '../types/matchCounter';
 

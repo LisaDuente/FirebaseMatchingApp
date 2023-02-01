@@ -20,7 +20,7 @@ function NavigationBar() {
   return (
     <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
           MakeMeMatch
           {' '}
             <img
@@ -42,7 +42,7 @@ function NavigationBar() {
             :
             <div>
                 <Link className='link' to='/login'>Login</Link>
-                <Link className='link' to='/'>Sign up</Link>
+                <Link className='link' to='/signUp'>Sign up</Link>
             </div>
           }
           </Nav>

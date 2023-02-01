@@ -1,10 +1,11 @@
 import React from 'react';
+import { WelcomeCarousel } from '../components/HelloComponents/WelcomeCarousel';
+import "../styles/hello.css"
 
 function Hello() {
   return (
     <div>
-       <button id='LOGINBUTTON'>LOGIN</button>
-          <section id="firebaseui-auth-container"></section>
+       <WelcomeCarousel />
     </div>
   
   );

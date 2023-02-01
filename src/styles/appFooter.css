@@ -1,0 +1,52 @@
+@media (max-width: 768px) { 
+.appFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(33,37,41);
+    height: 3rem;
+    display: inline-flex;
+}
+
+.footerItem{
+    padding: 0.5rem;
+    margin: auto auto auto auto;
+    width:fit-content;
+    color: grey;
+    text-decoration: none;
+}
+
+.footerItem:hover{
+    color: rgb(158, 158, 158);
+}
+}
+
+@media (min-width: 768px) {
+    .appFooter{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(33,37,41);
+        height: 3rem;
+        display: inline-flex;
+    }
+
+    .footerItem{
+        padding: 0.5rem;
+        margin: 0;
+        width:fit-content;
+        color: grey;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .itemContainer{
+        display: flex;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .footerItem:hover{
+        color: rgb(158, 158, 158);
+    }
+ }
