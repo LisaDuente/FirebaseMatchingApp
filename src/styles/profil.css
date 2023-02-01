@@ -8,6 +8,13 @@
 .profilCard{
     width: 30rem;
     height: fit-content;
+    background-color: var(--card-color);
+    color: white;
+}
+
+.contactCard{
+    background-color: var(--card-color);
+    color: grey;
 }
 
 .profilPicture{
@@ -49,8 +56,52 @@
     font-size: .6rem;
 }
 
+.accordion-button{
+    background-color: var(--highlight-color);
+    color: white;
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 500;
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: var(--highlight-color);
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+  }
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+  }
+
+  .accordion-button:hover{
+    opacity: 0.9;
+  }
+
+.accordion{
+     background-color: var(--card-color);
+
+}
+
+.accordion-body{
+    background-color: var(--bg-color);
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+}
+
+.accordion-collapse{
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+}
+
+.accordion-collapse[collapsing]{
+    box-shadow: 0 0 0 0.1rem var(--card-borders);
+}
+
+.accrodion-item{
+    --bs-accordion-border-color: var(--card-borders);
+}
+
 .bgAccordion{
-    background-color: rgba(226, 226, 226, 0.438);
+    background-color: var(--bg-color);
 }
 .buttons{
     margin: auto;
@@ -64,6 +115,8 @@
 .profilCard{
     width: 30rem;
     height: fit-content;
+    background-color: var(--card-color);
+    color: white;
 }
 
 .profilPicture{
@@ -108,6 +161,38 @@
 }
 
 .bgAccordion{
-    background-color: rgba(226, 226, 226, 0.438);
+    background-color: var(--bg-color);
+}
+.accordion-button{
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+    font-size: large;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bg-color);
+    background-color: var(--highlight-color);
+    border-color: black;
+  }
+
+.accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-button:hover{
+    opacity: 0.9;
+  }
+
+.accordion{
+     background-color: var(--card-color);
+}
+
+.accordion-body{
+    background-color: var(--bg-color);
+}
+
+.contactCard{
+    background-color: var(--card-color);
+    color: grey;
 }
 }

@@ -2,6 +2,7 @@
    --highlight-color: rgb(245, 138, 7);
    --bg-color: rgb(33,37,41);
    --card-color: rgba(0, 0, 0, 0.234);
+   --card-borders: rgb(25,28,31);
  }
 
 body{

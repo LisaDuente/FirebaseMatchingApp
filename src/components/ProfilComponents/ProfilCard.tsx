@@ -25,7 +25,7 @@ function ProfilCard(props: IProps) {
         <Accordion>
             <Accordion.Item eventKey="0">
               <div className="bgAccordion">
-                <Accordion.Header>Contact Information</Accordion.Header>
+                <Accordion.Header >Contact Information</Accordion.Header>
                 <Accordion.Body>
                    <ContactInfoForm user={user} />
                 </Accordion.Body>
