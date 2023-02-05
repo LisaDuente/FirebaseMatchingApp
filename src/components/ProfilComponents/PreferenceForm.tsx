@@ -39,7 +39,7 @@ function PreferenceForm(props: IProps) {
    
 
   return (
-    <Card className= "preferenceCard" >
+    <Card className= "contactCard" >
       <Card.Body className= "preferenceCardBody">
         <Card.Title>Change your preferences</Card.Title>
         <hr />
@@ -51,7 +51,7 @@ function PreferenceForm(props: IProps) {
         >
           {
             Object.keys(testHobby as Hobby).map((caption: string) => {
-              return <Tab eventKey={caption} title={caption}>
+              return <Tab eventKey={caption} title={caption} className="gameTabs">
                 {
                   testHobby[caption as keyof Hobby]?.map((gameName: string) => {
                     return <Button style={{margin: "0.1rem"}} variant="success" className="addBtn" onClick={async() => {await addHobby((user as User), gameName); if(userHobbies){setUserHobbies([gameName, ...userHobbies])}}}>{gameName} +</Button>
