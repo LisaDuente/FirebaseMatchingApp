@@ -165,7 +165,7 @@
 
 .preferenceSpan{
     margin-bottom: 2rem;
-    font-size: 1.1rem;;
+    font-size: 1.1rem;
 }
 
 .close{
@@ -223,4 +223,16 @@
     background-color: var(--card-color);
     color: grey;
 }
+
+.nav-tabs .nav-link {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  
+  .nav-tabs .nav-link.active {
+    border-bottom: solid 4px white !important;
+  }
 }
